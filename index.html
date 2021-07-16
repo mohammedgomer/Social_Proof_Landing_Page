@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+  <title>Social proof section</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: url(/images/bg-pattern.svg);
+      background-size: cover;
+      font-family: 'Spartan', sans-serif;
+
+    }
+
+    /* ------- FIRST SECTION -------- */
+
+    h1 {
+      color: hsl(300, 43%, 22%);
+      margin-top: 100px;
+      margin-left: 180px;
+      font-size: 50px;
+    }
+
+    h1+p {
+      margin-top: 10px;
+      margin-left: 180px;
+      margin-top: 20px;
+    }
+
+    .top-section>p {
+      color: hsl(300, 43%, 22%);
+      font-size: 15px;
+    }
+
+    .rating-cards {
+      margin-top: -250px;
+      font-weight: bold;
+      color: hsl(300, 43%, 22%);
+      font-size: 15px;
+      display: flex;
+      flex-direction: column;
+      margin-left: 60%;
+    }
+
+    .five-stars {
+      margin-left: 10px;
+    }
+
+    .card1,
+    .card2,
+    .card3,
+    p {
+      margin-left: 30px;
+    }
+
+    .card1,
+    .card2,
+    .card3 {
+      margin: 10px 0;
+      background-color: #f7f1f7;
+      padding: 10px;
+      border-radius: 5px;
+      width: 450px;
+      height: 55px;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .five-stars img {
+      margin: 0 3px;
+    }
+
+    .card2 {
+      margin-left: 25px;
+    }
+
+    .card3 {
+      margin-left: 75px;
+    }
+
+    /* -------- SECOND SECTION ------ */
+
+    .cust-reviews {
+
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      margin: 5% auto;
+      margin-left: 5%;
+    }
+
+    .buyer {
+      color: hsl(333, 80%, 67%);
+    }
+
+    .cust-reviews img {
+      border-radius: 50%;
+    }
+
+    .review-1,
+    .review-2,
+    .review-3 {
+      background-color: hsl(300, 43%, 22%);
+      color: #fff;
+      font-size: 15px;
+      border-radius: 10px;
+      width: 80%;
+      height: 260px;
+    }
+
+    .review-2 {
+      margin-top: 15px;
+    }
+
+    .review-3 {
+      margin-top: 25px;
+    }
+
+    .headline {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 5%;
+      align-items: center;
+      text-align: right;
+    }
+
+    .tagline {
+      margin-right: 55%;
+    }
+
+    .buyer {
+      color: hsl(333, 80%, 67%);
+      width: 100%;
+      text-align: left;
+      margin-top: 3px;
+    }
+
+    .headline>img {
+      width: 50px;
+      margin-left: 10px;
+    }
+
+    .headline+p {
+      margin-top: 30px;
+    }
+
+    /* ------------ MEDIA QUERIES ------------ */
+
+    @media(max-width: 375px) {
+      body {
+        overflow-x: none;
+      }
+
+      h1 {
+        margin: 15% 50%;
+        display: flex;
+
+      }
+
+      h1+p {
+        position: absolute;
+        left: 10px;
+        text-align: center;
+        width: 75%;
+        line-height: 30px;
+      }
+
+
+      .card1,
+      .card2,
+      .card3,
+      p {
+        display: block;
+        text-align: center;
+        margin: 5px auto;
+      }
+
+      .card1,
+      .card2,
+      .card3 {
+        width: 300px;
+        margin-top: 20px;
+        margin-left: 10%;
+        height: 75px;
+        text-align: center;
+
+      }
+
+      .cust-reviews {
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: none;
+        width: 400px;
+        padding: 10px;
+      }
+
+      .headline {
+        margin-left: 10px;
+      }
+
+      .tagline {
+        margin: 0 auto;
+      }
+
+      .rating-cards {
+        margin-top: 70% !important;
+        display: flex !important;
+        margin-left: 13px !important;
+      }
+
+
+
+
+    }
+
+    @media(max-width: 1440px) {
+
+      .top-section {
+        margin-left: 5%;
+      }
+
+      h1,
+      h1+p {
+        margin-left: 50px;
+      }
+
+      .rating-cards {
+        margin-left: 45%;
+      }
+
+      .cust-reviews {
+        display: flex;
+        margin: 10% auto;
+        width: 80%;
+        padding: 10px;
+      }
+
+      .tagline {
+        margin: 0 auto
+      }
+
+      .review-1,
+      .review-2,
+      .review-3 {
+        margin-left: 30px;
+      }
+    }
+
+    @media(max-width: 1087px) {
+
+      h1,
+      h1+p {
+        text-align: center;
+      }
+
+      .rating-cards {
+        display: flex;
+        margin: 30px 250px;
+      }
+    }
+
+    @media(max-width: 800px) {
+
+      h1,
+      h1+p {
+        margin-right: 100px;
+      }
+
+      .rating-cards {
+        margin-left: 130px;
+      }
+
+      .cust-reviews {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    @media(max-width: 695px) {
+      .rating-cards {
+        margin-left: 10%;
+      }
+    }
+
+    @media(max-width: 621px) {
+      .rating-cards {
+        margin-left: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ------- FIRST SECTION ------- -->
+
+  <section class="top-section">
+    <h1>10,000+ of our <br> users love our<br>products.</h1>
+    <p>We only provide great products combined with excellent <br> customer service.
+      See what our satisfied customers are <br> saying about our services.</p>
+
+    <div class="rating-cards">
+      <div class="card1">
+        <div class="five-stars"><img src="/images/icon-star.svg" alt=""><img src="/images/icon-star.svg" alt=""><img
+            src="/images/icon-star.svg" alt=""><img src="/images/icon-star.svg" alt=""><img src="/images/icon-star.svg"
+            alt=""></div>
+        <p>Rated 5 Stars in Reviews</p>
+      </div>
+
+      <div class="card2">
+        <div class="five-stars"><img src="/images/icon-star.svg" alt=""><img src="/images/icon-star.svg" alt=""><img
+            src="/images/icon-star.svg" alt=""><img src="/images/icon-star.svg" alt=""><img src="/images/icon-star.svg"
+            alt=""></div>
+        <p>Rated 5 Stars in Report Guru</p>
+      </div>
+      <div class="card3">
+        <div class="five-stars"><img src="/images/icon-star.svg" alt=""><img src="/images/icon-star.svg" alt=""><img
+            src="/images/icon-star.svg" alt=""><img src="/images/icon-star.svg" alt=""><img src="/images/icon-star.svg"
+            alt=""></div>
+        <p>Rated 5 Stars in BestTech</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ------- SECOND SECTION ------- -->
+
+
+  <section class="cust-reviews">
+
+    <div class="review-1">
+      <div class="headline">
+        <img src="/images/image-colton.jpg" alt="">
+        <div class="tagline">Colton Smith
+          <br>
+          <p class="buyer"> Verified Buyer</p>
+        </div>
+      </div>
+      <p>"We needed the same printed design as the one we had ordered a week
+        prior.
+        Not only did they find the original order, but we also received it in time.
+        Excellent!"</p>
+
+    </div>
+
+    <div class="review-2">
+      <div class="headline">
+        <img src="/images/image-irene.jpg" alt="">
+        <div class="tagline">
+          Irene Roberts
+          <br>
+          <p class="buyer">Verified Buyer</p>
+        </div>
+      </div>
+      <p>
+        "Customer service is always excellent and very quick turn around. Completely
+        delighted with the simplicity of the purchase and the speed of delivery."</p>
+    </div>
+
+    <div class="review-3">
+      <div class="headline">
+        <img src="/images/image-anne.jpg" alt="">
+        <div class="tagline">
+          Anne Wallace
+          <br>
+          <p class="buyer">Verified Buyer</p>
+        </div>
+      </div>
+      <p>
+        "Put an order with this company and can only praise them for the very high
+        standard. Will definitely use them again and recommend them to everyone!"
+      </p>
+    </div>
+  </section>
+
+
+</body>
+
+</html>
